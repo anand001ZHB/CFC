@@ -8,11 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditRatingComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
-  Submit(): void{
+  Submit(): void {
+    alert("Thank you for your response. It has been successfully submitted !!");
     this.router.navigate(["view-rating"]);
   }
 }
