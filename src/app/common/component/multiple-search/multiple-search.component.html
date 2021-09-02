@@ -1,0 +1,43 @@
+<form [formGroup]="addressForm">
+  <mat-form-field appearance="fill" class="bg-white">
+    <input type="text" placeholder="search for city" matInput formControlName="countryVal" [(ngModel)]="getCityVal" [matAutocomplete]="autoCountry" (keypress)="getInputVal($event)">
+    
+    <mat-autocomplete #autoCountry="matAutocomplete">
+      <mat-option *ngFor="let data of allCountry" [value]="data.country" (click)="getVal(data.country)">
+        {{data.country}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" *ngIf="showCityInput" class="bg-white">
+    <input type="text" placeholder="search for sub area" matInput formControlName="cityVal" [(ngModel)]="getSubArea" [matAutocomplete]="cityGroup">
+    <mat-autocomplete #cityGroup="matAutocomplete">
+      <mat-option *ngFor="let data of allCities" [value]="data" (click)="getAreaData(data)">
+        {{data}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>
+
+
+
+
+
+<!-- <form class="example-form">
+  <input type="text" placeholder="Search for a city" [formControl]="countryVal" [matAutocomplete]="auto">
+  <mat-autocomplete #auto="matAutocomplete">
+    <mat-option *ngFor="let data of allCountry" [value]="data.country" (click)="getVal(data.country)">
+      {{data.country}}
+    </mat-option>
+  </mat-autocomplete>
+
+  <input type="text" *ngIf="showCityInput" placeholder="Search for a city" [formControl]="cityVal"
+    [matAutocomplete]="auto1">
+  <mat-autocomplete #auto1="matAutocomplete">
+    <mat-option *ngFor="let data of allCities" [value]="data">
+      {{data}}
+    </mat-option>
+  </mat-autocomplete>
+ 
+
+</form> -->

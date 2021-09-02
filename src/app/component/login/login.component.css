@@ -1,0 +1,29 @@
+.form{
+    background-color: #d9e4f5;
+    background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+box-shadow: 0 8px 10px 0 rgb(0 0 0 / 30%);
+  transition: 0.3s;
+
+}
+.areaPos{
+    position: absolute;
+    width: 40%;
+    padding: 3vw 4vw;
+}
+
+.center-div {
+        display: flex;
+        justify-content: center;
+        top: 20%;
+        position: absolute;
+}
+
+.card-head-center {
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.header-font-size {
+    font-size: 2vw;
+}

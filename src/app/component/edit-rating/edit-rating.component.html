@@ -1,0 +1,26 @@
+<div class="container-fluid center-div">
+    <mat-card class="form areaPos">
+        <mat-card-header class="card-head-center">
+            <mat-card-title class="header-font-size">Edit Rating</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <form>
+                <mat-form-field class="w-100">
+                    <input matInput placeholder="Social distancing" name="socialdistancing" required>
+                </mat-form-field><br>
+                <mat-form-field class="w-100">
+                    <input matInput placeholder="Mask worn by people" name="mask" required>
+                </mat-form-field><br>
+                <mat-form-field class="w-100">
+                    <input matInput placeholder="Temparature taken at entry" name="temparature" required>
+                </mat-form-field><br>
+                <mat-form-field class="w-100">
+                    <input matInput placeholder="Ventilation" name="ventilation" required>
+                </mat-form-field>
+            </form>
+        </mat-card-content>
+        <mat-card-actions>
+            <button class="float-end" (click)="Submit()" mat-raised-button color="primary">Submit</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Starbucks",
+        "rating": 3,
+        "address": "Howrah, Kolkata, 987654",
+        "type": "Food"
+    },
+    {
+        "name": "XYZ hotel",
+        "rating": 3,
+        "address": "Kalighat, Kolkata, 411045",
+        "type": "Food"
+    },
+    {
+        "name": "PQR hotel",
+        "rating": 3,
+        "address": "Dumdum, Kolkata, 675432",
+        "type": "Food"
+    },
+    {
+        "name": "Dominos",
+        "rating": 4,
+        "address": "ABC street, Pune, 411045",
+        "type": "Food"
+    },
+    {
+        "name": "Pizza Huts",
+        "rating": 3,
+        "address": "Kormangala, Bengaluru 874567",
+        "type": "Food"
+    },
+    {
+        "name": "Mahi Restaurant",
+        "rating": 2,
+        "address": "Argora, Ranchi 834002",
+        "type": "Food"
+    },
+    {
+        "name": "Cafe Coffee Day",
+        "rating": 3,
+        "address": "Manikonda, Hyderabad 657654",
+        "type": "Food"
+    },
+    {
+        "name": "KFC",
+        "rating": 4,
+        "address": "Balewadi High Street Balewadi, Pune 411045",
+        "type": "Food"
+    },
+    {
+        "name": "Seasons Restaurant",
+        "rating": 3,
+        "address": "Electronic city, phase-2, Bengaluru 560100",
+        "type": "Food"
+    },
+    {
+        "name": "South Indian Restaurant",
+        "rating": 2,
+        "address": "Electronic city, phase-1, Bengaluru 560100",
+        "type": "Food"
+    }
+]

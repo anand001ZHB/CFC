@@ -1,0 +1,54 @@
+[
+  {
+    "country": "Pune",
+    "city": [
+      "Hinjewadi",
+      "Balewadi",
+      "Wagholi",
+      "Kalyani nagar"
+    ]
+  },
+  {
+    "country": "Kolkata",
+    "city": [
+      "Howrah",
+      "Dumdum",
+      "Durgapur",
+      "Kalighat"
+    ]
+  },
+  {
+    "country": "Bengaluru",
+    "city": [
+      "Hosa Road",
+      "Marathali",
+      "MG Road",
+      "Brigade Road",
+      "Electronic city",
+      "Kudlu gate",
+      "JP nagar",
+      "Kormangala",
+      "Jayanagar"
+    ]
+  },
+  {
+    "country": "Ranchi",
+    "city": [
+      "Harmu",
+      "Ratu road",
+      "Birsa chowk",
+      "Argora",
+      "Ashok nagar"
+    ]
+  },
+  {
+    "country": "Hyderabad",
+    "city": [
+      "Manikonda",
+      "Madhapur",
+      "Vijay nagar",
+      "Banjara hills",
+      "Jubilee hill"
+    ]
+  }
+]

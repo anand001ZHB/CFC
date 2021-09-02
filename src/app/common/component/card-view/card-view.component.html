@@ -1,0 +1,70 @@
+<div class="row">
+    <div class="col-11">
+        <app-multiple-search (valueChange)="displayValue($event)" ></app-multiple-search>
+    </div>
+</div>
+
+<div class="row" *ngFor="let allDataVal of allData | filter:searchText; let i = index">
+    <div class="col-12 mt-3">
+
+        <div class="col-11 pb-4 border float-start border-dark boxBbackground card-div">
+            <div class="col-12">
+                <div class="col-10 mb-3 p-2 float-start">
+                    <div class="col-12 float-start">
+                        <h2>
+                            <p class="float-start m-0">{{allDataVal.name}}</p>
+                        </h2>
+                    </div>
+                    <div class="col-12 float-start">
+                        <hr>
+                    </div>
+
+                    <div class="col-12 float-start">
+                        <div class="col-6 float-start pl-0 fs-6">
+                            <span class="material-icons float-start">location_on</span>
+                            <span>{{allDataVal.address}}</span>
+                        </div>
+                        <div class="col-6 float-start fs-6">
+                            <span class="material-icons float-start pr-1">restaurant</span>
+                            <span>{{allDataVal.type}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 pt-2 float-end">
+                    <div class="col-12 p-3 float-end">
+                        <span class="rating-no">
+                            <h2>{{allDataVal.rating}}</h2>
+                        </span>
+                    </div>
+                    <div class="col-12">
+                        <ngb-rating [(rate)]="allDataVal.rating" class="star float-end"></ngb-rating>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-12 p-0">
+                <div class="col-10">
+                    <div class="col-12 float-start">
+                        <span class="col-5 m-1 float-start label  info-bg "><span class="material-icons float-start"> people
+                            </span>
+                            <span class="textAlinement">Social distancing: Yes</span></span>
+                        <span class="col-5 m-1 float-start label info-bg"><span class="material-icons float-start"> masks
+                            </span> <span class="textAlinement">Mask worn by people: Yes</span></span>
+                    </div>
+                    <div class="col-12 float-start">
+                        <span class="col-5 m-1 float-start label  info-bg"><span class="material-icons float-start">
+                                thermostat_auto </span>
+                                <span class="textAlinement">  Temparature taken at entry: Yes</span></span>
+                        <span class="col-5 m-1 float-start label  info-bg"><span class="material-icons float-start"> hvac
+                            </span>
+                            <span class="textAlinement"> Ventilation: Well ventilated</span></span>
+                    </div>
+                </div>
+                <div class="col-2 float-start">
+                    <span class="material-icons float-start edit-star" (click)="editRating()">open_in_new</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
